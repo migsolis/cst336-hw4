@@ -21,10 +21,10 @@
         <hr>
         
         <nav>
-            <a href="index.html" class="current">Home</a>
-            <a href="hmi.html">HMI</a>
-            <a href="computer_vision.html">Computer Vision</a>
-            <a href="control.html">Planning and Control</a>
+            <a href="/" <%= current === 'home' ? 'class=current' : '' %> >Home</a>
+            <a href="/hmi" <%= current === 'hmi' ? 'class=current' : '' %> >HMI</a>
+            <a href="/computer_vision" <%= current === 'computer_vision' ? 'class=current' : '' %> >Computer Vision</a>
+            <a href="/control" <%= current === 'control' ? 'class=current' : '' %> >Planning and Control</a>
 
         </nav>
         

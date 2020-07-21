@@ -7,19 +7,22 @@ app.use(express.static('public'));
 
 // routes
 app.get('/', (req, res) => {
-    res.render('index.html');
+    let card = faker.helpers.createCard();
+    let avatar = faker.internet.avatar();
+    console.log(card);
+    res.render('index.ejs', {card: card, avatar: avatar});
 });
 
 app.get('/computer_vision', (req, res) => {
-    res.render('computer_vision.html');
+    res.render('computer_vision.ejs');
 });
 
 app.get('/control', (req, res) => {
-    res.render('control.html');
+    res.render('control.ejs');
 });
 
 app.get('/hmi', (req, res) => {
-    res.render('hmi.html');
+    res.render('hmi.ejs');
 });
 
 // starting server

@@ -1,4 +1,4 @@
-<%- include('partials/header') %>       
+<%- include('partials/header', {current: 'home'}) %>       
         <div class="gallery-container">
             <div class="dropdown">
                 <img src="img/kuka-robots.jpg" alt="Picture of Kuka Robot">
@@ -37,5 +37,7 @@
                 <span id="creditText">Photo by <a href="https://unsplash.com/@agkdesign?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alex Knight</a> on <a href="/s/photos/robotics?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
             </figure>
         </main>
-<%- include('partials/fake') %>
+        <div>
+            <%- include('fake') %>
+        </div>
 <%- include('partials/footer') %>
